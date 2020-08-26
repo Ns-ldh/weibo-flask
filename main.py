@@ -5,6 +5,7 @@ from flask_migrate import Migrate,MigrateCommand
 
 from libs.orm import db
 
+
 #初始化 app
 app = Flask(__name__)
 app.secret_key = r'asdwquohdq45646767qdwkj'
@@ -26,5 +27,5 @@ def home():
     return  'hello world'
 
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     manager.run()
